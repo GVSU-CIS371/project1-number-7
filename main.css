@@ -5,3 +5,56 @@ html {
   margin: 0px;
   padding: 0px;
 }
+
+/* I decided to layout a grid for 'app' which contains 'main' as an 'app-item'. 'main' can also be another grid that holds store item values.
+Feel free to change whatever is currently here.*/
+
+#app {
+  display: grid;
+  font-family: "Segoe UI";
+
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer"
+  ;
+
+  gap:5px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app-item{
+  padding: 15px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+header {
+  display: flex;
+  background-color: tan;
+  grid-area: header;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li{
+  margin: 10px;
+}
+
+main {
+  background-color: tan;
+  grid-area: main;
+}
+
+footer {
+  background-color: tan;
+  grid-area: footer;
+  text-align: center;
+}
