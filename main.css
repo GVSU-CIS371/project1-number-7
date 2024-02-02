@@ -30,6 +30,9 @@ Feel free to change whatever is currently here.*/
   padding: 15px;
   border-style: solid;
   border-width: 1px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
 }
 
 header {
